@@ -9,7 +9,7 @@ namespace PiSubmarine::Time
 public:
         virtual ~ITickable() = default;
 
-        virtual void Tick(std::chrono::nanoseconds deltaTime) = 0;
+        virtual void Tick(const std::chrono::nanoseconds& uptime, const std::chrono::nanoseconds& deltaTime) = 0;
     };
 }
 

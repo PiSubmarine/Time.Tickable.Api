@@ -1,6 +1,6 @@
 include("${PISUBMARINE_BUILD_SYSTEM}")
 
-add_library(${PISUBMARINE_MODULE_NAME}.Mock INTERFACE PiSubmarine/ModuleTemplate/ITickable.h)
+add_library(${PISUBMARINE_MODULE_NAME}.Mock INTERFACE PiSubmarine/Time/ITickableMock.h)
 target_include_directories(${PISUBMARINE_MODULE_NAME}.Mock INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")
 PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME}.Mock)
 
